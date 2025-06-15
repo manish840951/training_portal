@@ -71,12 +71,6 @@ function Header() {
                   {user.name}
               </div>
               ):null}
-              {isAuthenticated?( <div
-                style={styles.dropdownItem}
-                onClick={() => handleDropdownNav('/progress')}
-              >
-                Progress
-              </div>):null}
               {isAuthenticated?(<div
                 style={styles.dropdownItem}
                 onClick={()=>logout({ logoutParams: { returnTo: window.location.origin } })}
