@@ -42,7 +42,7 @@ function CoursesPage() {
       if (isAuthenticated) {
         try {
           const token = await getAccessTokenSilently();
-          const res = await axios.get('https://localhost:8000/api/progress/watched', {
+          const res = await axios.get('https://localhost:8000/api/progress/api/watched', {
             headers: { Authorization: `Bearer ${token}` }
           });
           setWatchedVideos(res.data.watchedVideos.map(v => v._id));

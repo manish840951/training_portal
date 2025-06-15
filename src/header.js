@@ -40,7 +40,6 @@ function Header() {
         <div style={styles.leftNav}>
           <Link to="/" style={styles.link}>Home</Link>
           <Link to="/courses" style={styles.link}>Courses</Link>
-          <Link to="/progress" style={styles.link}>Progress</Link>
           <Link to="/about" style={styles.link}>About</Link>
           {isAuthenticated && <p>{"Welcome"}</p>}
           {isAuthenticated?(
