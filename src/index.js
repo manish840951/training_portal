@@ -3,20 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 import { Auth0Provider } from '@auth0/auth0-react';
-// import axios from 'axios';
-
-
-// const axios = require('axios');
-
-// const getData = async () => {
-//   const response = await Axios.get("http://localhost:5000/getData");
-//   setData(response.data);
-// }
-
-// fetch('http://localhost:8000/api/')
-//   .then(response => response.json())
-//   .then(data => console.log('Backend response:', data))
-//   .catch(error => console.error('Connection error:', error));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

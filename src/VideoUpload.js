@@ -1,28 +1,3 @@
-// import React, { useState } from 'react';
-// import axios from 'axios';
-
-// function VideoUpload({ onUpload }) {
-//   const [file, setFile] = useState(null);
-
-//   const handleChange = (e) => setFile(e.target.files[0]);
-
-//   const handleUpload = async () => {
-//     if (!file) return;
-//     const formData = new FormData();
-//     formData.append('file', file);
-//     const res = await axios.post('http://localhost:8000/api/upload', formData);
-//     onUpload(res.data.filename);
-//   };
-
-//   return (
-//     <div>
-//       <input type="file" accept="video/mp4" onChange={handleChange} />
-//       <button onClick={handleUpload}>Upload Video</button>
-//     </div>
-//   );
-// }
-
-// export default VideoUpload;
 
 import React, { useState } from 'react';
 import axios from 'axios';
@@ -38,7 +13,7 @@ function VideoUpload({ courseId, onUpload }) {
     formData.append('courseId', courseId);
     formData.append('title', title);
 
-    const res = await axios.post('http://localhost:8000/api/upload', formData);
+    const res = await axios.post('https://localhost:8000/api/upload', formData);
     if (onUpload) onUpload(res.data.filename);
   };
 

@@ -25,9 +25,6 @@ function Content() {
             See your personalised recommendations<br />
             based on your interests and goals
           </p>
-          {/* <a href="#" className="blog-link">
-            View our blog <span className="arrow">→</span>
-          </a> */}
         </div>
         <div className="teacher-section">
           <div className="certified-text">Certified teachers only</div>
@@ -58,17 +55,15 @@ function Content() {
             <div className="stat-desc">courses</div>
           </div>
           <div className="stat-box-yellow-alt">
-            <div className="stars">★★★★★ <span className="rating">5.0</span></div>
+            <div className="stars">★★★★★<span className="rating">5.0</span></div>
             <div className="stat-value">+180k</div>
             <div className="stat-desc">learner reviews</div>
           </div>
         </div>
         <div className="illustration">
-          {/* SVG or image here */}
           <svg width="280" height="140" viewBox="0 0 280 140">
             <rect x="60" y="100" width="180" height="28" rx="12" fill="#b89cff" />
             <polygon points="60,100 48,120 60,128" fill="#222" />
-            {/* Simple stick-figure girl */}
             <circle cx="170" cy="80" r="18" fill="#fff" stroke="#222" strokeWidth="3" />
             <path d="M170 98 Q180 115 200 110" stroke="#222" strokeWidth="3" fill="none" />
             <path d="M170 98 Q160 115 140 110" stroke="#222" strokeWidth="3" fill="none" />

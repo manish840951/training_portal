@@ -7,8 +7,6 @@ import Courses from './courses';
 
 
 function App() {
-
-
   return (
     <Router>
         <Header/> 
@@ -22,7 +20,6 @@ function App() {
             <Route path="/callback" element={<div>Processing login...</div>} />
           </Routes>
         </div>
-        {/* <Footer />  */}
     </Router>
 
   );

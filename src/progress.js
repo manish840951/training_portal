@@ -10,7 +10,7 @@ function ProgressPage() {
     const fetchWatched = async () => {
       if (isAuthenticated) {
         const token = await getAccessTokenSilently();
-        const res = await axios.get('http://localhost:8000/api/progress/watched', {
+        const res = await axios.get('/api/progress/watched', {
           headers: { Authorization: `Bearer ${token}` }
         });
         setWatchedVideos(res.data.watchedVideos);
